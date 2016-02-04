@@ -1,0 +1,41 @@
+desarrollo = rgba(255,235,215,1)
+
+body
+	margin 0
+	padding 0
+
+[desarrollo]:before
+	background desarrollo
+	content "Desarrollo"
+	line-height 3em
+	display block
+	text-align center
+
+[desarrollo] [grupo]:before
+	background desarrollo
+	content "Grupo"
+	text-align center
+	flex-basis 100%
+
+
+[desarrollo] [caja]:after
+	background desarrollo
+	content "Caja"
+	text-align center
+	display block
+	margin .5em -.5em -.5em
+
+[desarrollo] [caja]
+	box-shadow inset 0 0 0 1px desarrollo
+
+[grupo]
+	align-items stretch
+	display flex
+	flex-wrap wrap
+
+[caja]
+	flex 1
+	padding .5em
+
+[caja~='sin-margen']
+	padding 0

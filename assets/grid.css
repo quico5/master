@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+[desarrollo]:before {
+  background: #ffebd7;
+  content: "Desarrollo";
+  line-height: 3em;
+  display: block;
+  text-align: center;
+}
+[desarrollo] [grupo]:before {
+  background: #ffebd7;
+  content: "Grupo";
+  text-align: center;
+  flex-basis: 100%;
+}
+[desarrollo] [caja]:after {
+  background: #ffebd7;
+  content: "Caja";
+  text-align: center;
+  display: block;
+  margin: 0.5em -0.5em -0.5em;
+}
+[desarrollo] [caja] {
+  box-shadow: inset 0 0 0 1px #ffebd7;
+}
+[grupo] {
+  align-items: stretch;
+  display: flex;
+  flex-wrap: wrap;
+}
+[caja] {
+  flex: 1;
+  padding: 0.5em;
+}
+[caja~='sin-margen'] {
+  padding: 0;
+}
